@@ -1,0 +1,623 @@
+@import 'reset';
+@import 'variable';
+
+
+
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+    font-family: Microsoft JhengHei;
+}
+
+// header
+.header {
+    height: 76px;
+    background: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    position: absolute;
+    opacity: 0.8;
+    width: 1024px;
+
+
+
+    h1 {
+        a {
+            background-image: url(../img/logo.png);
+            width: 182px;
+            height: 36px;
+            overflow: hidden;
+            white-space: nowrap;
+            display: block;
+            text-indent: 101%;
+        }
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            padding: 0 30px;
+
+            a {
+
+                color: white;
+                text-decoration: none;
+                font-weight: 700;
+                padding-bottom: 20px;
+
+                &:hover {
+                    color: $third-color;
+                    border-bottom: 5px solid $third-color;
+                }
+            }
+        }
+
+    }
+}
+
+// footer
+.footer {
+    background: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+
+
+}
+
+.logo {
+    img {
+        width: 182px;
+        height: 36px;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.805);
+        font-size: $font-size-sm;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.icon {
+    ul {
+        display: flex;
+
+        li {
+            padding: 0 15px;
+
+            svg {
+                width: 25px;
+                height: 25px;
+                color: $primary-color;
+                border: 1px solid white;
+                border-radius: 50%;
+                background-color: white;
+                transition: .5s;
+                transform: scale(.9);
+
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 0 12px #ffee10;
+                    text-shadow: 0 0 12px #ffee10;
+                }
+            }
+
+
+        }
+
+    }
+
+}
+
+
+// banner 區塊 
+.index {
+
+    background-image: url(../img/bg_index.png);
+    height: 560px;
+}
+
+.index-title {
+    color: $third-color;
+    font-size: 36px;
+    line-height: $line-height-base;
+    padding: 100px 20px;
+    font-weight: 600;
+
+    h2 {
+        padding-bottom: 20px;
+    }
+
+    span {
+        color: white;
+    }
+}
+
+.btn-primary {
+    color: white;
+    background-color: $third-color;
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: $font-size-base;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s;
+
+    svg {
+        width: 25px;
+        height: 25px;
+        margin: 0 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: #00644b;
+    }
+}
+
+
+
+
+
+// 內文標題
+
+.l-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    h2 {
+        display: inline;
+        font-size: $font-size-big;
+        color: $third-color;
+        font-weight: 700;
+        padding-right: 15px;
+    }
+
+    span {
+        color: #a3a3a3;
+        font-weight: 600;
+    }
+
+
+}
+
+.btn-secondary {
+    color: $third-color;
+    background-color: white;
+    border: 1px solid $third-color;
+    border-radius: 5px;
+    padding: 3px 20px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #00644b;
+        color: white;
+    }
+}
+
+.content-list {
+    display: flex;
+    padding: 20px 15px;
+    justify-content: space-between;
+
+    li {
+        width: 30%;
+        box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.072);
+        padding: 20px 15px;
+        text-align: center;
+        border: 1px solid $secondary-color;
+        border-radius: 8px;
+        transition: box-shadow 1s, border 1s;
+
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 10px;
+            color: #323228;
+        }
+
+        p {
+            font-size: $font-size-base;
+            line-height: $line-height-base;
+            padding-top: 14px;
+            text-align: justify;
+            color: #a3a3a3;
+            font-weight: 600;
+        }
+
+        &:hover {
+            box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.158);
+            border: 1px solid $secondary-color;
+        }
+    }
+
+}
+
+
+// 課程表
+.lession {
+    padding: 20px 0 50px 0;
+}
+
+.lession-table {
+
+    table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-spacing: 10;
+        width: 100%;
+    }
+
+    tr:hover {
+        background-color: rgba(224, 224, 224, 0.295);
+    }
+
+    th {
+        background-color: #ebebeb;
+        font-weight: 600;
+        color: rgb(36, 36, 36);
+    }
+
+    th,
+    td {
+        border-bottom: 1px solid $secondary-color;
+        border-top: 1px solid $secondary-color;
+        text-align: left;
+        padding: 10px 120px 10px 20px;
+    }
+
+}
+
+.text-green {
+    color: $third-color;
+    font-weight: 600;
+}
+
+// 申請資訊
+.index-apply {
+    background-color: #ebebeb;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.apply-title {
+    font-size: 32px;
+    text-align: justify;
+    line-height: $line-height-base;
+    font-weight: 700;
+    color: $primary-color;
+}
+
+.apply-information {
+    width: 50%;
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: 0;
+        font-size: $font-size-base;
+        border: 1px solid $secondary-color;
+        outline: none;
+        padding: 10px 5px;
+    }
+
+
+}
+
+.apply-text {
+    width: 100%;
+
+    textarea {
+        width: 100%;
+        height: 250px;
+        resize: none;
+        border-radius: 5px;
+        border: 2px solid $secondary-color;
+        overflow: hidden;
+        outline: none;
+        color: #323228;
+        margin-bottom: 20px;
+        font-size: $font-size-base;
+    }
+}
+
+
+.submit {
+    font-size: $font-size-base;
+    font-weight: 600;
+    padding: 8px 30px;
+    background-color: $third-color;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+    transition: transform 0.5s;
+    letter-spacing: 10px;
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: #00644b;
+    }
+}
+
+
+// 第二頁
+// nav
+.course {
+    background-image: url(../img/bg_course.png);
+    height: 560px;
+}
+
+.course-title {
+
+    line-height: $line-height-base;
+    padding: 150px 20px;
+    font-weight: 600;
+
+    h2 {
+        color: white;
+        font-size: 36px;
+
+
+    }
+
+    span {
+        color: $third-color;
+        font-size: $font-size-base;
+        display: block;
+        padding-bottom: 50px;
+    }
+}
+
+// 老師簡介
+
+.teacher {
+    display: flex;
+    padding: 0px 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0 30px 0;
+
+    img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+.teacher-name {
+    font-size: 36px;
+    font-weight: 700;
+
+    h2 {
+        color: $third-color;
+        padding-bottom: 10px;
+    }
+}
+
+
+.teacher-list {
+    li {
+        padding-bottom: 10px;
+        font-size: $font-size-base;
+        color: #a3a3a3;
+        list-style: disc;
+    }
+}
+
+// 課程特別
+.special {
+    padding: 0px 100px;
+    margin: 50px 0 30px 0;
+}
+
+.special-list {
+    padding: 0 20px;
+
+    li {
+        font-size: $font-size-base;
+        list-style: decimal;
+        line-height: $line-height-base;
+        padding: 0 10px;
+        text-align: justify;
+
+    }
+}
+
+// 課程大綱
+.outline {
+    padding: 0px 100px;
+    margin: 50px 0 30px 0;
+}
+
+.outline-list {
+    li {
+        padding: 15px 0 15px 30px;
+        border-radius: 5px;
+    }
+}
+
+.list-gray {
+    background-color: #ebebeb;
+    font-weight: 600;
+}
+
+.list-white {
+    color: #a3a3a3;
+    font-size: $font-size-sm;
+}
+
+.coures-apply {
+    background-color: #ebebeb;
+    padding: 100px 20px;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.apply-btn {
+    padding-left: 60px;
+}
+
+// 第三頁
+
+.faq {
+
+    background-image: url(../img/bg_QA.png);
+    height: 560px;
+    text-align: center;
+    padding: 200px 0px;
+}
+
+.faq-title {
+    color: $third-color;
+    font-weight: 600;
+    padding-bottom: 30px;
+
+
+    h2 {
+        padding-bottom: 10px;
+        color: #ebebeb;
+        font-size: 40px;
+
+    }
+
+    span {
+        color: $third-color;
+        font-size: 24px;
+    }
+}
+
+.faq-search {
+    display: flex;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.search-bar {
+    font-size: $font-size-base;
+    border: 1px solid $secondary-color;
+    outline: none;
+    height: 35px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+}
+
+.search-btn {
+    background-color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    right: 0;
+    color: black;
+    background-color: white;
+}
+
+.question {
+    padding: 20px 20px;
+}
+
+
+
+.question-list {
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: $line-height-base;
+    }
+
+    p {
+        color: #323228;
+        font-size: $font-size-sm;
+        padding-bottom: 15px;
+        line-height: $line-height-base;
+    }
+
+    a {
+        text-decoration: none;
+        color: $third-color;
+        font-weight: 600;
+    }
+
+    ol {
+        padding: 0px 0px 15px 20px;
+        font-size: $font-size-sm;
+
+        li {
+            line-height: $line-height-base;
+            list-style: decimal;
+
+        }
+    }
+
+    ul {
+        padding: 0px 0px 15px 20px;
+        font-size: $font-size-sm;
+
+        li {
+            line-height: $line-height-base;
+            list-style: disc;
+
+        }
+    }
+
+    h4 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: $line-height-base;
+    }
+
+}
+
+#no-bottom {
+    padding: 0;
+}
+
+
+.paying {
+    padding: 20px 20px;
+}
+
+.refund {
+    padding: 20px 20px;
+}
+
+.faq-apply {
+    background-color: #ebebeb;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: space-around;
+}
