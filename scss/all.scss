@@ -3,8 +3,6 @@
 
 
 
-
-
 * {
     box-sizing: border-box;
 
@@ -28,8 +26,6 @@
     opacity: 0.8;
     width: 1024px;
 
-
-
     h1 {
         a {
             background-image: url(../img/logo.png);
@@ -41,29 +37,30 @@
             text-indent: 101%;
         }
     }
+}
 
-    ul {
-        display: flex;
+.header-menu {
+    display: flex;
 
-        li {
-            padding: 0 30px;
+    li {
+        padding: 0 30px;
 
-            a {
+        a {
 
-                color: white;
-                text-decoration: none;
-                font-weight: 700;
-                padding-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            padding-bottom: 20px;
 
-                &:hover {
-                    color: $third-color;
-                    border-bottom: 5px solid $third-color;
-                }
+            &:hover {
+                color: $third-color;
+                border-bottom: 5px solid $third-color;
             }
         }
-
     }
+
 }
+
 
 // footer
 .footer {
@@ -137,7 +134,7 @@
     color: $third-color;
     font-size: 36px;
     line-height: $line-height-base;
-    padding: 100px 20px;
+    padding: 150px 20px;
     font-weight: 600;
 
     h2 {

@@ -163,19 +163,20 @@ table {
   display: block;
   text-indent: 101%;
 }
-.header ul {
+
+.header-menu {
   display: flex;
 }
-.header ul li {
+.header-menu li {
   padding: 0 30px;
 }
-.header ul li a {
+.header-menu li a {
   color: white;
   text-decoration: none;
   font-weight: 700;
   padding-bottom: 20px;
 }
-.header ul li a:hover {
+.header-menu li a:hover {
   color: #00cc99;
   border-bottom: 5px solid #00cc99;
 }
@@ -233,7 +234,7 @@ table {
   color: #00cc99;
   font-size: 36px;
   line-height: 1.5;
-  padding: 100px 20px;
+  padding: 150px 20px;
   font-weight: 600;
 }
 .index-title h2 {
