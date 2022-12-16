@@ -25,6 +25,7 @@
     position: absolute;
     opacity: 0.8;
     width: 1024px;
+    z-index: 99;
 
     h1 {
         a {
@@ -128,13 +129,17 @@
 
     background-image: url(../img/bg_index.png);
     height: 560px;
+    position: relative;
 }
 
 .index-title {
     color: $third-color;
     font-size: 36px;
     line-height: $line-height-base;
-    padding: 150px 20px;
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    z-index: 1;
     font-weight: 600;
 
     h2 {
@@ -213,6 +218,11 @@
     }
 }
 
+.content {
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
 .content-list {
     display: flex;
     padding: 20px 15px;
@@ -254,11 +264,12 @@
 
 
 // 課程表
-.lession {
-    padding: 20px 0 50px 0;
+.lesson {
+    padding: 0px 20px;
+    margin-bottom: 30px;
 }
 
-.lession-table {
+.lesson-table {
 
     table {
         margin: 0 auto;
@@ -369,12 +380,16 @@
 .course {
     background-image: url(../img/bg_course.png);
     height: 560px;
+    position: relative;
 }
 
 .course-title {
 
     line-height: $line-height-base;
-    padding: 150px 20px;
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    z-index: 1;
     font-weight: 600;
 
     h2 {
@@ -457,17 +472,18 @@
         padding: 15px 0 15px 30px;
         border-radius: 5px;
     }
+
+    li:nth-child(odd) {
+        background-color: #ebebeb;
+        font-weight: 600;
+    }
+
+    li:nth-child(even) {
+        color: #a3a3a3;
+    }
 }
 
-.list-gray {
-    background-color: #ebebeb;
-    font-weight: 600;
-}
 
-.list-white {
-    color: #a3a3a3;
-    font-size: $font-size-sm;
-}
 
 .coures-apply {
     background-color: #ebebeb;
@@ -544,7 +560,8 @@
 }
 
 .question {
-    padding: 20px 20px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -599,17 +616,19 @@
 
 }
 
-#no-bottom {
+
+.question-list .no-bottom {
     padding: 0;
 }
 
-
 .paying {
-    padding: 20px 20px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
 }
 
 .refund {
-    padding: 20px 20px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
 }
 
 .faq-apply {

@@ -153,6 +153,7 @@ table {
   position: absolute;
   opacity: 0.8;
   width: 1024px;
+  z-index: 99;
 }
 .header h1 a {
   background-image: url(../img/logo.png);
@@ -228,13 +229,17 @@ table {
 .index {
   background-image: url(../img/bg_index.png);
   height: 560px;
+  position: relative;
 }
 
 .index-title {
   color: #00cc99;
   font-size: 36px;
   line-height: 1.5;
-  padding: 150px 20px;
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  z-index: 1;
   font-weight: 600;
 }
 .index-title h2 {
@@ -298,6 +303,11 @@ table {
   color: white;
 }
 
+.content {
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
 .content-list {
   display: flex;
   padding: 20px 15px;
@@ -332,26 +342,27 @@ table {
   border: 1px solid #ebebeb;
 }
 
-.lession {
-  padding: 20px 0 50px 0;
+.lesson {
+  padding: 0px 20px;
+  margin-bottom: 30px;
 }
 
-.lession-table table {
+.lesson-table table {
   margin: 0 auto;
   border-collapse: collapse;
   border-spacing: 10;
   width: 100%;
 }
-.lession-table tr:hover {
+.lesson-table tr:hover {
   background-color: rgba(224, 224, 224, 0.295);
 }
-.lession-table th {
+.lesson-table th {
   background-color: #ebebeb;
   font-weight: 600;
   color: rgb(36, 36, 36);
 }
-.lession-table th,
-.lession-table td {
+.lesson-table th,
+.lesson-table td {
   border-bottom: 1px solid #ebebeb;
   border-top: 1px solid #ebebeb;
   text-align: left;
@@ -430,11 +441,15 @@ table {
 .course {
   background-image: url(../img/bg_course.png);
   height: 560px;
+  position: relative;
 }
 
 .course-title {
   line-height: 1.5;
-  padding: 150px 20px;
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  z-index: 1;
   font-weight: 600;
 }
 .course-title h2 {
@@ -501,15 +516,12 @@ table {
   padding: 15px 0 15px 30px;
   border-radius: 5px;
 }
-
-.list-gray {
+.outline-list li:nth-child(odd) {
   background-color: #ebebeb;
   font-weight: 600;
 }
-
-.list-white {
+.outline-list li:nth-child(even) {
   color: #a3a3a3;
-  font-size: 14px;
 }
 
 .coures-apply {
@@ -579,7 +591,8 @@ table {
 }
 
 .question {
-  padding: 20px 20px;
+  padding: 0px 20px;
+  margin-bottom: 20px;
 }
 
 .question-list h3 {
@@ -620,16 +633,18 @@ table {
   line-height: 1.5;
 }
 
-#no-bottom {
+.question-list .no-bottom {
   padding: 0;
 }
 
 .paying {
-  padding: 20px 20px;
+  padding: 0px 20px;
+  margin-bottom: 20px;
 }
 
 .refund {
-  padding: 20px 20px;
+  padding: 0px 20px;
+  margin-bottom: 20px;
 }
 
 .faq-apply {
